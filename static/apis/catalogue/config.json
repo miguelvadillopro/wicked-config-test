@@ -5,7 +5,7 @@
     "uris": [
       "/catalogue"
     ],
-    "strip_uri": false
+    "strip_uri": true
   },
   "plugins": []
 }
