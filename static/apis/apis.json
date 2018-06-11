@@ -40,7 +40,9 @@
       "desc": "catalogue",
       "auth": "key-auth",
       "tags": [],
-      "plans": []
+      "plans": [
+        "basic"
+      ]
     }
   ],
   "_links": {
