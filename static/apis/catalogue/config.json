@@ -1,0 +1,11 @@
+{
+  "api": {
+    "name": "catalogue",
+    "upstream_url": "http://172.30.18.76/",
+    "uris": [
+      "/catalogue"
+    ],
+    "strip_uri": false
+  },
+  "plugins": []
+}

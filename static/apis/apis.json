@@ -1,37 +1,46 @@
 {
   "apis": [
     {
-      "name": "Petstore",
       "id": "petstore",
-      "plans": [
-        "stupid",
-        "basic",
-        "unlimited"
-      ],
+      "name": "Petstore",
       "desc": "This is a sample Petstore server. You can find out more about Swagger at [http://swagger.io](http://swagger.io).",
+      "auth": "key-auth",
       "tags": [
         "Sample"
       ],
-      "auth": "key-auth"
+      "plans": [
+        "basic",
+        "stupid",
+        "unlimited"
+      ]
     },
     {
-      "name": "Petstore OAuth",
       "id": "petstore-oauth",
-      "plans": [
-        "stupid",
-        "basic",
-        "unlimited"
-      ],
+      "name": "Petstore OAuth",
       "desc": "This is a sample Petstore server secured via OAuth 2.0 Client Credentials flow.",
+      "auth": "oauth2",
+      "settings": {
+        "enable_client_credentials": true,
+        "token_expiration": "3600",
+        "scopes": ""
+      },
       "tags": [
         "Sample"
       ],
-      "auth": "oauth2",
       "requiredGroup": "dev",
-      "settings": {
-        "token_expiration": 3600,
-        "enable_client_credentials": true
-      }
+      "plans": [
+        "basic",
+        "stupid",
+        "unlimited"
+      ]
+    },
+    {
+      "id": "catalogue",
+      "name": "catalogue",
+      "desc": "catalogue",
+      "auth": "key-auth",
+      "tags": [],
+      "plans": []
     }
   ],
   "_links": {
